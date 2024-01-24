@@ -1,0 +1,79 @@
+<html>
+<head> 👋 Hi, I’m @caplogistica
+👀 I’m interested in Devops,IA,Logistica
+🌱 I’m currently learning Python, IA
+💞️ I’m looking to collaborate on …
+📫 How to reach me …
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cube {
+  position: relative;
+  width: 200px;
+  transform-style: preserve-3d;
+  animation: rotate 5s infinite linear;
+}
+
+.cube div {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right, red, blue);
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  to {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+</style>
+</head>
+<body>
+<div class="cube">
+  <div class="front"></div>
+  <div class="back"></div>
+  <div class="right"></div>
+  <div class="left"></div>
+  <div class="top"></div>
+  <div class="bottom"></div>
+</div>
+</body>
+</html>
