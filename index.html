@@ -1,93 +1,160 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-  <!-- He corregido el error ortográfico en el título -->
-  <title>Este es un cubo que no para nunca</title>
-  
-  <div>
-  <div>👋 Hi, I’m @caplogistica</div>
-     <div>👀 I’m interested in Devops,IA,Logistica</div>
-     <div>🌱I’m currently learning Python,IA</div>
-     <div>💞️ I’m looking to collaborate on</div>
-	 <div>📫 How to reach me …</div> 
-	 
-	</div>
-	 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Gonzalez - IT Manager</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
 
+        header {
+            background: linear-gradient(90deg, #ff00ff, #00ffff);
+            width: 100%;
+            padding: 20px;
+        }
 
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #0a0a0a;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .neon-text {
+            color: #39ff14;
+            text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 40px #39ff14;
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            color: #ff00ff;
+            text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+        }
+
+        .portfolio-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #ff00ff;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ff00ff;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            background: linear-gradient(90deg, #ff00ff, #00ffff);
+            color: #0a0a0a;
+            cursor: pointer;
+        }
+
+        .footer {
+            background: linear-gradient(90deg, #00ffff, #ff00ff);
+            width: 100%;
+            padding: 10px;
+        }
+
+        .footer p {
+            margin: 0;
+            color: #0a0a0a;
+        }
+    </style>
 </head>
-  
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background: green;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .cube {
-      position: relative;
-      width: 200px;
-      transform-style: preserve-3d;
-      animation: rotate 5s infinite linear;
-    }
-
-    .cube div {
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      /* He cambiado el gradiente de color para que sea más suave y armonioso */
-      background: linear-gradient(to right, pink, purple);
-    }
-
-    .front {
-      transform: translateZ(100px);
-    }
-
-    .back {
-      transform: rotateY(180deg) translateZ(100px);
-    }
-
-    .right {
-      transform: rotateY(90deg) translateZ(100px);
-    }
-
-    .left {
-      transform: rotateY(-90deg) translateZ(100px);
-    }
-
-    .top {
-      transform: rotateX(90deg) translateZ(100px);
-    }
-
-    .bottom {
-      transform: rotateX(-90deg) translateZ(100px);
-    }
-
-    @keyframes rotate {
-      from {
-        transform: rotate3d(1, 1, 1, 0deg);
-      }
-      to {
-        transform: rotate3d(1, 1, 1, 360deg);
-      }
-    }
-  </style>
 
 <body>
-  <div class="cube">
-    <div class="front"></div>
-    <div class="back"></div>
-    <div class="right"></div>
-    <div class="left"></div>
-    <div class="top"></div>
-    <div class="bottom"></div>
-  </div>
+    <header>
+        <h1>Mi Portafolio Retrowave</h1>
+    </header>
+    <div class="container">
+        <section class="section">
+            <h2 class="neon-text">Bienvenido</h2>
+            <p>¡Bienvenido a mi página personal! Soy Jorge Gonzalez, un apasionado IT Manager y Administrativo Logístico
+                con una fuerte inclinación por la tecnología y la inteligencia artificial.</p>
+        </section>
+        <section class="section">
+            <h2 class="neon-text">Sobre mí</h2>
+            <p>Soy Jorge Gonzalez, IT Manager y Administrativo Logístico. Apasionado por la tecnología y la inteligencia
+                artificial, siempre buscando la vanguardia en el mundo de IT y logística.</p>
+        </section>
+        <section class="section">
+            <h2 class="neon-text">Portafolio de Trabajos</h2>
+            <div class="portfolio-item">
+                <h3>Proyecto 1: Sistema de Gestión Logística</h3>
+                <p>Desarrollo de un sistema integral para la gestión logística de la empresa, mejorando la eficiencia y
+                    reduciendo costos.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Proyecto 2: Implementación de IA</h3>
+                <p>Implementación de soluciones de inteligencia artificial para optimizar procesos administrativos y de
+                    IT.</p>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="neon-text">Sígueme en Redes Sociales</h2>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/jorge-gonzalez-3a997a7b/" target="_blank">LinkedIn</a>
+                <a href="https://x.com/Jorge76375991" target="_blank">Twitter</a>
+                <a href="https://github.com/caplogistica" target="_blank">GitHub</a>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="neon-text">Contacto</h2>
+            <form class="contact-form" action="mailto:jorge@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Tu Nombre">
+                <input type="email" name="email" placeholder="Tu Correo Electrónico">
+                <textarea name="message" placeholder="Tu Mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Jorge Gonzalez</p>
+    </footer>
 </body>
+
 </html>
